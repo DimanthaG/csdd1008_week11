@@ -1,0 +1,5 @@
+mode: set
+util/main.go:9.13,12.30 3 0
+util/main.go:12.30,14.3 1 0
+util/main.go:16.2,25.26 8 0
+util/main.go:25.26,27.3 1 0
