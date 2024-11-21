@@ -1,15 +1,11 @@
 package util
 
-func IsPrime(n int) bool {
-	if n <= 1 {
-		return false
+func ReverseString(s string) string {
+	runes := []rune(s)
+	for i, j := 0, len(runes)-1; i < j; i, j = i+1, j-1 {
+		runes[i], runes[j] = runes[j], runes[i]
 	}
-	for i := 2; i*i <= n; i++ {
-		if n%i == 0 {
-			return false
-		}
-	}
-	return true
+	return string(runes)
 }
 
 func Factorial(n int) int {
