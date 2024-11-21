@@ -17,3 +17,11 @@ func Factorial(n int) int {
 	}
 	return n * Factorial(n-1)
 }
+
+func SumOfSlice(slice []int) int {
+	sum := 0
+	for _, v := range slice {
+		sum += v
+	}
+	return sum
+}
